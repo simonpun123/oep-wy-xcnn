@@ -121,7 +121,7 @@ A customised version of libcint is used to support extra Gaussian integrals. The
   '("int3c1e_ovlp"              ( \, \, ))
   '("int3c1e_ipovlp"            (nabla \, \, ))
 ```
-4. Follow the instructions at `Generating integrals` in `README` to generate new codes and place them accordingly. I choose to NOT update libcint here.
+4. Follow the instructions at `Generating integrals` in `README` of [`libcint` library](https://github.com/sunqm/libcint) to generate new codes and place them accordingly. I choose to NOT update libcint here.
 5. Go back to `pyscf/lib/build` where the command to compile PySCF core module is executed. Run `make` again and the libcint library will be updated.
 6. Open `pyscf/gto/moleintor.py` and add the following two lines to `_INTOR_FUNCTIONS`
 ```
